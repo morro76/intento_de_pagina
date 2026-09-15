@@ -1,0 +1,241 @@
+/* styles.css */
+
+:root {
+  --primary: #0b3c8c;   /* azul */
+  --secondary: #ffffff; /* blanco */
+  --dark: #111111;
+  --light: #f5f5f5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--light);
+  color: var(--dark);
+}
+
+/* Header */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.nav a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Secciones */
+
+.section {
+  padding: 2.5rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+/* Hero */
+
+.hero {
+  background: linear-gradient(135deg, var(--primary), #1b5fd1);
+  color: var(--secondary);
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero p {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: var(--secondary);
+  color: var(--primary);
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #e0e0e0;
+}
+
+/* Tablas */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: var(--secondary);
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+/* Cards */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: var(--secondary);
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+/* Timeline */
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.timeline-item {
+  background: var(--secondary);
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+/* Novedades */
+
+.news-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.news-item {
+  background: var(--secondary);
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.news-date {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Formularios */
+
+.form {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 400px;
+  margin-top: 1rem;
+}
+
+.form label {
+  font-size: 0.9rem;
+}
+
+.form input,
+.form textarea {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.form textarea {
+  min-height: 100px;
+}
+
+/* Indumentaria */
+
+.shirts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.shirt {
+  background: var(--secondary);
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.shirt img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary);
+  color: var(--secondary);
+  margin-top: 2rem;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .nav {
+    justify-content: center;
+  }
+}
